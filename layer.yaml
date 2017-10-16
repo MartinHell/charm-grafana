@@ -1,0 +1,15 @@
+"options":
+  "basic":
+    "use_venv": !!bool "false"
+    "packages": []
+    "include_system_packages": !!bool "false"
+  "grafana": {}
+"includes":
+- "layer:basic"
+- "interface:nrpe-external-master"
+- "interface:grafana-source"
+- "interface:http"
+"ignore":
+  "grafana": [".*.swp"]
+"repo": "https://git.launchpad.net/grafana-charm"
+"is": "grafana"

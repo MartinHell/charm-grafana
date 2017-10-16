@@ -1,0 +1,372 @@
+{
+  "layers": [
+    "layer:basic", 
+    "grafana", 
+    "interface:nrpe-external-master", 
+    "interface:grafana-source", 
+    "interface:http", 
+    "build"
+  ], 
+  "signatures": {
+    ".build.manifest": [
+      "build", 
+      "dynamic", 
+      "unchecked"
+    ], 
+    ".gitignore": [
+      "layer:basic", 
+      "static", 
+      "0da5c4dcda27cd6406e5bb81cbf68ddccaf728ac764ec15053a165c1449d87d9"
+    ], 
+    "Makefile": [
+      "layer:basic", 
+      "static", 
+      "b7ab3a34e5faf79b96a8632039a0ad0aa87f2a9b5f0ba604e007cafb22190301"
+    ], 
+    "README.md": [
+      "grafana", 
+      "static", 
+      "b8abe4b59ce94d4b779f48e08a513a27a84bb89f9063da390a62784e1fe7ab45"
+    ], 
+    "actions.yaml": [
+      "grafana", 
+      "dynamic", 
+      "9a7e41ad5e53f3304b05133c5100dc096b8b2a252d635925de0e608cfea0a0b2"
+    ], 
+    "actions/create-api-key": [
+      "grafana", 
+      "static", 
+      "a1dc3123b7dc79d048902932a63c82e1c73ff6055495332b5b05b4d88df5e207"
+    ], 
+    "actions/get-admin-password": [
+      "grafana", 
+      "static", 
+      "fde68711c38732e8cb7780d2960e6087bb038b3e61733968e263fc625dd9a4a4"
+    ], 
+    "actions/grafana_utils.py": [
+      "grafana", 
+      "static", 
+      "f286edf97bf18353971ee6bd705341dd3812c8ff104f81254f78dbc544893dab"
+    ], 
+    "actions/import-dashboard": [
+      "grafana", 
+      "static", 
+      "73c0a39f4ac1407ddc5ac833d858fb8e75420e67c035d0c7926909a7116b2d12"
+    ], 
+    "bin/layer_option": [
+      "layer:basic", 
+      "static", 
+      "621b556cd208005e131e9f648859294347da9376609745a73ca2e808dd2032f9"
+    ], 
+    "config.yaml": [
+      "grafana", 
+      "dynamic", 
+      "8e7ce467b54bf4f83d21ae244cf00ab2ef3a1778100765763193f633cc9eaa97"
+    ], 
+    "copyright": [
+      "grafana", 
+      "static", 
+      "47b2363574909e748bcc471d9004780ac084b301c154905654b5b6f088474749"
+    ], 
+    "files/dashboards_backup": [
+      "grafana", 
+      "static", 
+      "99a5cf326df15e6479c44203f7be99266cbc74d00a7e60ff05ba257966700b27"
+    ], 
+    "hooks/config-changed": [
+      "layer:basic", 
+      "static", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/grafana-source-relation-broken": [
+      "interface:grafana-source", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/grafana-source-relation-changed": [
+      "interface:grafana-source", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/grafana-source-relation-departed": [
+      "interface:grafana-source", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/grafana-source-relation-joined": [
+      "interface:grafana-source", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/hook.template": [
+      "layer:basic", 
+      "static", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/install": [
+      "layer:basic", 
+      "static", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/leader-elected": [
+      "layer:basic", 
+      "static", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/leader-settings-changed": [
+      "layer:basic", 
+      "static", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/nrpe-external-master-relation-broken": [
+      "interface:nrpe-external-master", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/nrpe-external-master-relation-changed": [
+      "interface:nrpe-external-master", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/nrpe-external-master-relation-departed": [
+      "interface:nrpe-external-master", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/nrpe-external-master-relation-joined": [
+      "interface:nrpe-external-master", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/relations/grafana-source/README.md": [
+      "interface:grafana-source", 
+      "static", 
+      "208ee23ca91089ad1fe1379033ffa0d83964299734bbdebab75e71bf00dcb53d"
+    ], 
+    "hooks/relations/grafana-source/__init__.py": [
+      "interface:grafana-source", 
+      "static", 
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ], 
+    "hooks/relations/grafana-source/copyright": [
+      "interface:grafana-source", 
+      "static", 
+      "47b2363574909e748bcc471d9004780ac084b301c154905654b5b6f088474749"
+    ], 
+    "hooks/relations/grafana-source/interface.yaml": [
+      "interface:grafana-source", 
+      "static", 
+      "29017a5d553cfb9d3aa00257c5acc5c688cbf0f79edf04be2c0b8f6462eca883"
+    ], 
+    "hooks/relations/grafana-source/provides.py": [
+      "interface:grafana-source", 
+      "static", 
+      "96a684a2c50fe126c57c5263d00468084846ed73e5b202b893c94a60d369df01"
+    ], 
+    "hooks/relations/grafana-source/requires.py": [
+      "interface:grafana-source", 
+      "static", 
+      "74d0063b1f24bb41d6c4110d9be6b259cff1b4f5732bb4ff98d66502d9e266fb"
+    ], 
+    "hooks/relations/http/README.md": [
+      "interface:http", 
+      "static", 
+      "9c95320ad040745374fc03e972077f52c27e07eb0386ec93ae19bd50dca24c0d"
+    ], 
+    "hooks/relations/http/__init__.py": [
+      "interface:http", 
+      "static", 
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ], 
+    "hooks/relations/http/interface.yaml": [
+      "interface:http", 
+      "static", 
+      "d0b64038b85b7791ee4f3a42d73ffc8c208f206f73f899cbf33a519d12f9ad13"
+    ], 
+    "hooks/relations/http/provides.py": [
+      "interface:http", 
+      "static", 
+      "c6e16d6c0d80009aab33c51cb1e196f959df155ac656f47fe7104484859d2476"
+    ], 
+    "hooks/relations/http/requires.py": [
+      "interface:http", 
+      "static", 
+      "70188554d673bff61578f4e601a78a91efb4736df727507e984be5ca19335f82"
+    ], 
+    "hooks/relations/nrpe-external-master/README.md": [
+      "interface:nrpe-external-master", 
+      "static", 
+      "d8ed3bc7334f6581b12b6091923f58e6f5ef62075a095a4e78fb8f434a948636"
+    ], 
+    "hooks/relations/nrpe-external-master/__init__.py": [
+      "interface:nrpe-external-master", 
+      "static", 
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ], 
+    "hooks/relations/nrpe-external-master/interface.yaml": [
+      "interface:nrpe-external-master", 
+      "static", 
+      "894f24ba56148044dae5b7febf874b427d199239bcbe1f2f55c3db06bb77b5f0"
+    ], 
+    "hooks/relations/nrpe-external-master/provides.py": [
+      "interface:nrpe-external-master", 
+      "static", 
+      "54e5400de99c051ecf6453776ad416b1cb8c6b73b34cbe2f41b617a8ed7b9daa"
+    ], 
+    "hooks/start": [
+      "layer:basic", 
+      "static", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/stop": [
+      "layer:basic", 
+      "static", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/update-status": [
+      "layer:basic", 
+      "static", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/upgrade-charm": [
+      "layer:basic", 
+      "static", 
+      "8fb6559bf4d4b7cdf1b857564c1d7265df98e863a4746fcbae092f141e59d97e"
+    ], 
+    "hooks/website-relation-broken": [
+      "interface:http", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/website-relation-changed": [
+      "interface:http", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/website-relation-departed": [
+      "interface:http", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "hooks/website-relation-joined": [
+      "interface:http", 
+      "dynamic", 
+      "f976e7ff3e347d44dac22626507f2a88042ba913aeebca7ffdcd5f6179b83683"
+    ], 
+    "icon.svg": [
+      "grafana", 
+      "static", 
+      "f4f0c17ca4cb44797e2b16cdb6072a532d38a1a8e32d513763db3f2cbf035f5f"
+    ], 
+    "layer.yaml": [
+      "grafana", 
+      "dynamic", 
+      "7a9da5984a4352fb17fb9e193edc83a24d3c9096d688bbf8a4f9d8ed69797058"
+    ], 
+    "lib/charms/layer/__init__.py": [
+      "layer:basic", 
+      "static", 
+      "71a8b901f7e64a6b1b61959fc25819bafc9c9905e37a918615b9f949295095a4"
+    ], 
+    "lib/charms/layer/basic.py": [
+      "layer:basic", 
+      "static", 
+      "d09706ef3a224eb60d34366a2867c382791aa30157ab5b77eda37f29731df2e2"
+    ], 
+    "lib/charms/layer/execd.py": [
+      "layer:basic", 
+      "static", 
+      "af1f2409869f990cdb33cffc4120fb6713876e8e680ac5f064ea510bbdca1073"
+    ], 
+    "metadata.yaml": [
+      "grafana", 
+      "dynamic", 
+      "3314581cd7bc4192f02725be6491121567a15826296c4b0df32e877f8aad2d69"
+    ], 
+    "reactive/__init__.py": [
+      "layer:basic", 
+      "static", 
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ], 
+    "reactive/grafana.py": [
+      "grafana", 
+      "static", 
+      "fc2f6d461a7f821eebd23610361fb451952f107a7a0f65e141e3a2f00b4bec96"
+    ], 
+    "requirements.txt": [
+      "layer:basic", 
+      "static", 
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ], 
+    "scripts/get_admin_password": [
+      "grafana", 
+      "static", 
+      "483669fd8a0cedd9f12796bed744d2b0af56db9d58f1d0773af3d96bbd0397f7"
+    ], 
+    "templates/grafana.ini.j2": [
+      "grafana", 
+      "static", 
+      "b35e33dd43e91419785fe48f8158d99a2e21a035792e7b3eac806146840719e2"
+    ], 
+    "templates/juju-dashboards-backup.j2": [
+      "grafana", 
+      "static", 
+      "e5575e2de06045878e599b19ef2c55b6153efb8079faad6883776ab64d9ddd3e"
+    ], 
+    "tox.ini": [
+      "layer:basic", 
+      "static", 
+      "00b57a776ac313e92a52daa05d1fdb6056c21b3105b643d32610fd937664321b"
+    ], 
+    "wheelhouse/Jinja2-2.9.6.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "ddaa01a212cd6d641401cb01b605f4a4d9f37bfc93043d7f760ec70fb99ff9ff"
+    ], 
+    "wheelhouse/MarkupSafe-1.0.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
+    ], 
+    "wheelhouse/PyYAML-3.12.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+    ], 
+    "wheelhouse/Tempita-0.5.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "cacecf0baa674d356641f1d406b8bff1d756d739c46b869a54de515d08e6fc9c"
+    ], 
+    "wheelhouse/charmhelpers-0.18.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "6bb4276024d03e5caa176628e027cd0d75320395de6018d261fdda7e379da256"
+    ], 
+    "wheelhouse/charms.reactive-0.5.0.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "4df8e4c0052b0d46ec8a17dc724faa98169a879752eee78dc07d0f6a0a80837e"
+    ], 
+    "wheelhouse/netaddr-0.7.19.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "38aeec7cdd035081d3a4c306394b19d677623bf76fa0913f6695127c7753aefd"
+    ], 
+    "wheelhouse/pip-8.1.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "4d24b03ffa67638a3fa931c09fd9e0273ffa904e95ebebe7d4b1a54c93d7b732"
+    ], 
+    "wheelhouse/pyaml-17.10.0.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "a9a3e83372072fc7dc1aebcab37d6f2e08fb8066f553f31d6fc9cb2ad0b515d3"
+    ], 
+    "wheelhouse/six-1.11.0.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+    ]
+  }
+}

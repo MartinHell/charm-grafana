@@ -1,0 +1,197 @@
+"options":
+  "install_sources":
+    "default": |
+      - 'deb https://packagecloud.io/grafana/stable/debian/ wheezy main'
+    "type": "string"
+    "description": |
+      YAML list of additional installation sources, as a string. The number of
+      install_sources must match the number of install_keys. For example:
+        install_sources: |
+         - ppa:project1/ppa
+         - ppa:project2/ppa
+  "install_keys":
+    "default": |
+      - |
+          -----BEGIN PGP PUBLIC KEY BLOCK-----
+          Version: GnuPG v1
+
+          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
+          sA==
+          =H60S
+          -----END PGP PUBLIC KEY BLOCK-----
+    "type": "string"
+    "description": "YAML list of GPG keys for installation sources, as a string. For\
+      \ apt repository\nURLs, use the public key ID used to verify package signatures.\
+      \ For \nother sources such as PPA, use empty string. This list must have the\
+      \ \nsame number of elements as install_sources, even if the key items are \n\
+      all empty string. An example to go with the above for install_sources:\n  install_keys:\
+      \ |\n   - \"\"\n   - \"\"\n"
+  "install_file":
+    "default": ""
+    "type": "string"
+    "description": |
+      Location where grafana .deb file can be found. If set install_sources and
+      install_keys options are ignored. Example:
+        install_file: http://my.company.com/packages/grafana/grafana_3.0.0_amd64.deb
+  "app_mode":
+    "default": "production"
+    "type": "string"
+    "description": "production or development"
+  "instance_name":
+    "default": ""
+    "type": "string"
+    "description": |
+      Grafana instance name, for example "grafana.example.com". If unset
+      defaults to server hostname
+  "root_url":
+    "default": "%(protocol)s://%(domain)s:%(http_port)s/"
+    "type": "string"
+    "description": "The full public facing url"
+  "anonymous":
+    "default": !!bool "false"
+    "type": "boolean"
+    "description": "Whether to allow anonymous users, defaults to False."
+  "anonymous_role":
+    "default": "Viewer"
+    "type": "string"
+    "description": "The role given to anonymous users if enabled."
+  "datasources":
+    "default": ""
+    "description": |
+      - type,name,access,url,password,user,database
+    "type": "string"
+  "default_dashboards":
+    "default": ""
+    "type": "string"
+    "description": |
+      List of default dashboards to be loaded on Grafana storage backend
+      (default: sqlite3 backend)
+  "nagios_context":
+    "default": "juju"
+    "type": "string"
+    "description": |
+      A string that will be prepended to instance name to set the host name
+      in nagios. So for instance the hostname would be something like:
+          juju-myservice-0
+      If you're running multiple environments with the same services in them
+      this allows you to differentiate between them.
+  "nagios_servicegroups":
+    "default": "juju"
+    "type": "string"
+    "description": |
+      Comma separated list of nagios servicegroups for the graphite check
+  "port":
+    "type": "string"
+    "default": "3000"
+    "description": |
+      The port grafana will expose web services on.
+  "admin_password":
+    "default": ""
+    "type": "string"
+    "description": |
+      Grafana admin password. Default, pwgen(16) random password.
+      See also README.md for instructions how to retrieve automatically
+      generated password
+  "dashboards_backup_schedule":
+    "default": ""
+    "type": "string"
+    "description": |
+      Cron schedule for dashboards backups
+  "dashboards_backup_dir":
+    "default": "/srv/backups"
+    "type": "string"
+    "description": |
+      Location where to put dashboard dumps
+  "smtp_host":
+    "default": ""
+    "type": "string"
+    "description": |
+      The SMTP host and port that grafana will send emails via. If unset SMTP will not be enabled
+      Example:
+         smtp.example.com:25
+  "smtp_auth":
+    "default": ""
+    "type": "string"
+    "description": |
+      The SMTP username and password that the Grafana plugin will authenticate with
+      in "username:password" format. Example
+        mysmtpuser:secret
+  "smtp_from_address":
+    "default": "admin@grafana.localhost"
+    "type": "string"
+    "description": |
+      The SMTP from address that the Grafana plugin will use when addressing emails.
+  "install_plugins":
+    "default": ""
+    "type": "string"
+    "description": |
+      Comma separated list of http(s) URLs where grafana plugin tarballs can be found.
+      Example:
+        install_plugins: http://my.company.com/packages/grafana/plugins/plugin-panel.tar.gz
+  "http_proxy":
+    "default": ""
+    "type": "string"
+    "description": |
+      Proxy URL to use for install_file
+  "google_analytics_ua_id":
+    "default": ""
+    "type": "string"
+    "description": |
+      Google Universal Analytics ID per http://docs.grafana.org/installation/configuration/#google-analytics-ua-id

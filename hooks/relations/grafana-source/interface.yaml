@@ -1,0 +1,4 @@
+name: grafana-source
+summary: Grafana datasource interface
+version: 1
+repo: https://git.launchpad.net/interface-grafana-source

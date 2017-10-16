@@ -1,0 +1,22 @@
+"name": "grafana"
+"summary": "Graph and Dashboard builder"
+"maintainer": "Prometheus Charmers <prometheus-charmers@lists.launchpad.net>"
+"description": |
+  Grafana is the leading graph and dashboard builder for visualizing
+  time series metrics.
+"tags":
+- "misc"
+- "monitoring"
+"series":
+- "trusty"
+- "xenial"
+"requires":
+  "grafana-source":
+    "interface": "grafana-source"
+"provides":
+  "nrpe-external-master":
+    "interface": "nrpe-external-master"
+    "scope": "container"
+  "website":
+    "interface": "http"
+"subordinate": !!bool "false"
